@@ -12,6 +12,7 @@
   --blue-color: #004788;
   --success-color: #2dc071;
   --hover-color: #2a7cc7;
+  --border-color: #dedede;
   --disabled-element-color: #8ec2f2;
   --height-header: 90px;
 }
@@ -26,48 +27,53 @@
   font-size: 58px;
   line-height: 80px;
   text-align: center;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
 }
 
 .heading-2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
 }
 
 .heading-3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
 }
 
 .heading-4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
+  color: var(--text-color);
 }
 
 .heading-5 {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1px;
+  color: var(--text-color);
 }
 
 .heading-6 {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
 }
 .text-link {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
 }
 
 .container {
@@ -82,7 +88,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
   color: var(--light-text-color);
   background-color: transparent;
   border: 0;
@@ -111,7 +117,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
+  color: var(--second-text-color);
   background-color: var(--light-gray-color);
 }
 
@@ -212,6 +219,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.hero__content--heading,
+.hero__content--desc {
+  color: inherit;
+}
+
 .hero__content--desc {
   width: 540px;
   padding: 40px 0;
@@ -255,10 +267,10 @@ body {
 .hero__card-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .hero__card-item {
-  max-width: 328px;
   width: 100%;
   padding: 36px;
   background-color: var(--light-text-color);
@@ -268,6 +280,10 @@ body {
 .hero__card-item:last-child {
   background-color: var(--primary-color);
   color: var(--light-text-color);
+}
+
+.hero__card-item:last-child .hero__card-item--title {
+  color: inherit;
 }
 
 .hero__card-item:last-child .hero__card-item-icon {
@@ -325,4 +341,94 @@ body {
 .feature__item-icon {
   width: 90px;
   height: 70px;
+}
+
+/* Industry */
+.industry {
+  padding-top: 112px;
+  padding-bottom: 196px;
+  text-align: center;
+}
+
+.industry--title {
+  width: 470px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.industry__card {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.industry__card-item {
+  padding: 40px 35px;
+  border: 1px solid var(--border-color);
+}
+
+.industry__card-item--desc {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+.industry__card-rating {
+  color: var(--yellow-color);
+}
+
+/* Testimonials */
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.testimonials__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials__subscribe {
+  margin-top: 70px;
+  padding: 30px 50px;
+  background: linear-gradient(270deg, var(--pink-color) -1.04%, var(--blue-color) 100%);
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonials__subscribe-content {
+  max-width: 260px;
+  width: 100%;
+  color: var(--light-text-color);
+  text-align: left;
+}
+
+.testimonials__subscribe-form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.testimonials__subscribe-form * {
+  border-radius: 0;
+}
+
+.testimonials__subscribe-input {
+  padding: 15px 0;
+  color: var(--second-text-color);
+  outline: none;
+  border: none;
+  flex: 1;
+}
+
+.testimonials__subscribe-submit,
+.testimonials__subscribe-input {
+  padding-left: 22px;
+  padding-right: 22px;
 }
