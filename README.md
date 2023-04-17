@@ -1,4 +1,4 @@
-# INSUREBOUND PROJECT:
+# INSUREBOUND PROJECT
 
 ## 1. DEPLOY PROJECT:
 
@@ -8,4 +8,16 @@
 
 ```bash
 git clone https://github.com/luan-thnh/insurebound.git
+```
+
+## 3. GO TO THE PROJECT FOLDER:
+
+```bash
+cd insurebound
+```
+
+## 3. OPEN PROJECT FOLDER:
+
+```bash
+code .
 ```
